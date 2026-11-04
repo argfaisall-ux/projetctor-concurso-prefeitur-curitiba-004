@@ -72,7 +72,7 @@ html, body { max-width: 100%; overflow-x: hidden; }
 
 /* ===== Remove ícones de acessibilidade em TODOS os dispositivos (mobile + desktop) ===== */
 div[vw], div[vw].enabled, div[vw-access-button], div[vw-plugin-wrapper], div[vw-plugin-top-wrapper],
-[class*="vlibras"], [class*="vpw-"], [class*="vw-"],
+[class*="vlibras"]:not(body):not(html), [class*="vpw-"]:not(body):not(html), [class*="vw-"]:not(body):not(html),
 #INDbtnWrap, #INDmenu, #INDmenu-btn, #INDWrap, #INDshadowRootWrap, #INDShadowRootHost,
 #vlibras-access, #vlibras-access-wrapper, #vlibras-button, #vlibras-popup,
 .acess-fab, .afont, .topo-fab, .acessibilidade-btn, .a11y-fab,
