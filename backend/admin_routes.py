@@ -23,7 +23,7 @@ def _from_name_inscricao(concurso: str, cargo: str = '') -> str:
     """Retorna o display name (From) adequado conforme o concurso da inscrição."""
     c = (str(concurso or '') + ' ' + str(cargo or '')).upper()
     if 'SELETIVO' in c or 'TESTE' in c:
-        return 'Teste Seletivo Curitiba'
+        return 'Processo Seletivo Curitiba'
     return 'Concurso Curitiba'
 
 logger = logging.getLogger(__name__)
