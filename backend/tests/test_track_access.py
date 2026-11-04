@@ -103,5 +103,5 @@ def test_inicio_html_has_csp_connect_src():
 def test_inicio_html_has_tracker_script():
     r = requests.get(f"{BASE_URL}/inicio.html", timeout=15)
     assert r.status_code == 200
-    assert "__ceb_tracker" in r.text
+    assert "visitor_id" in r.text  # tracker snippet injected before </body>
     assert "/api/track/access" in r.text
